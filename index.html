@@ -177,7 +177,7 @@
     <div class="result-modal-container" id="resultModal">
     <div class="result-modal">
         <h2>Result</h2>
-        <p>Please select a color from the question palette and match it with the corresponding color in the answer palette. Once you find the correct match, enter the hex code of the selected color in the input field and click the submit button.</p>
+        <p id="resultParagraph"></p>
         <button id="closeResultModalButton">Close</button>
     </div>
     </div>
@@ -202,8 +202,8 @@
    </div>
 
    <div class="answer-container">
-    <input type="text" placeholder="Enter Hex Code">
-    <button id="shareButton">Submit</button>
+    <input type="text" id="submitInput" placeholder="Enter Hex Code">
+    <button id="submitButton">Submit</button>
     <div id="shareContainer">
    </div>
 
