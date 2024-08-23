@@ -4,10 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xolor Test</title>
+    <link rel="shortcut icon" href="./rainbow-colors-removebg-preview.png" type="image/x-icon">
 </head>
 <body>
 
-    
+
+    <style>
+
+        .test-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .answercolorpalettecontainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+ 
+        }
+
+        .answercolorpalettecontainer input{
+            margin-bottom: 10px;
+            width: 500px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            height: 500px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+
+        .questioncolorpalettecontainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+            margin-top: 20px;
+        }
+
+
+        .questioncolorpalettecontainer input{
+            margin-bottom: 10px;
+            width: 500px;
+            height: 500px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+    </style>
+
+ <div class="test-container">
+    <div class="questioncolorpalettecontainer">
+            <label for="questionColor"></label>
+            <input id="questionColor" type="color">
+    </div>
+    <div class="answercolorpalettecontainer">
+
+        <label for="answerColor"></label>
+        <input id="answerColor" type="color">
+
+
+    </div>
+   </div>
+
     
 </body>
-</html>
+</html> 
