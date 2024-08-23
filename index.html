@@ -6,79 +6,99 @@
     <title>Xolor Test</title>
     <link rel="shortcut icon" href="./rainbow-colors-removebg-preview.png" type="image/x-icon">
 </head>
+
+
+<style>
+
+    body{
+        height: 100vh;
+        display: block;
+        text-align: center;
+        height: fit-content;
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .test-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: fit-content;
+        background-color: #f8f9fa;
+        margin-right: auto;
+        margin-left: auto;
+        height: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+
+    .answercolorpalettecontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f8f9fa;
+
+    }
+
+    .answercolorpalettecontainer input{
+        margin-bottom: 10px;
+        width: 500px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        height: 500px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+
+    .questioncolorpalettecontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        background-color: #f8f9fa;
+        margin-top: 20px;
+    }
+
+
+    .questioncolorpalettecontainer input{
+        margin-bottom: 10px;
+        width: 500px;
+        height: 500px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+</style>
+
+
 <body>
 
-
-    <style>
-
-        .test-container{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            height: 100vh;
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        }
-
-        .answercolorpalettecontainer{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f8f9fa;
- 
-        }
-
-        .answercolorpalettecontainer input{
-            margin-bottom: 10px;
-            width: 500px;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            height: 500px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+    <h2>Color Palette Test</h2>
+  <button id="generateButton">Take Test</button>
 
 
-        .questioncolorpalettecontainer{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f8f9fa;
-            margin-top: 20px;
-        }
-
-
-        .questioncolorpalettecontainer input{
-            margin-bottom: 10px;
-            width: 500px;
-            height: 500px;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-    </style>
-
- <div class="test-container">
+        <div class="test-container">
+            
     <div class="questioncolorpalettecontainer">
-            <label for="questionColor"></label>
+            <label for="questionColor">Generator Color</label>
             <input id="questionColor" type="color">
     </div>
     <div class="answercolorpalettecontainer">
 
-        <label for="answerColor"></label>
+        <label for="answerColor">Result</label>
         <input id="answerColor" type="color">
-
+       
 
     </div>
    </div>
