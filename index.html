@@ -15,10 +15,10 @@
         display: block;
         text-align: center;
         height: fit-content;
-        background-color: #f8f9fa;
         padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        border-radius: 10px;;
+        background: rgb(214,217,224);
+        background: linear-gradient(167deg, rgba(214,217,224,1) 11%, rgba(210,252,234,1) 46%, rgba(167,176,193,0.9654236694677871) 100%);
     }
 
     .test-container{
@@ -27,23 +27,47 @@
         justify-content: space-around;
         align-items: center;
         height: fit-content;
-        background-color: #f8f9fa;
+        background-color: transparent;
         margin-right: auto;
         margin-left: auto;
-        height: 100%;
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
 
+
+    body h2{
+        color: rgba(86, 50, 121, 0.589);
+        font-size: 30px;
+        font-family: fantasy;
+        font-stretch: expanded;        
+        padding-top: 5%;
+    }
+
+    
+    body button{
+        color: rgba(86, 50, 121, 0.589);
+        background-color: rgba(86, 50, 121, 0.089);
+        border: 2px solid  rgb(86, 50, 121);
+        font-size: 15px;
+        font-weight: 600;
+        padding: 15px 30px;
+    }
+
+    
+    body button:hover{
+        color: rgba(255, 255, 255, 0.589);
+        background-color:  rgba(86, 50, 121, 0.623);;
+        border: 2px solid rgba(255, 255, 255, 0.123);
+        font-size: 15px;
+        cursor: pointer;
+    }
 
     .answercolorpalettecontainer{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #f8f9fa;
-
+     
     }
 
     .answercolorpalettecontainer input{
@@ -63,7 +87,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center; 
-        background-color: #f8f9fa;
         margin-top: 20px;
     }
 
@@ -85,7 +108,7 @@
 <body>
 
     <h2>Color Palette Test</h2>
-  <button id="generateButton">Take Test</button>
+  <button id="testButton">Take Test</button>
 
 
         <div class="test-container">
@@ -103,6 +126,8 @@
     </div>
    </div>
 
-    
+   
+   <script src="./super.js"></script>
+
 </body>
 </html> 
